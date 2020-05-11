@@ -1,7 +1,11 @@
-## Put comments here that give an overall description of what your
-## functions do
+## This exercise is very similar to the Programming Assignment 2's example. You need to only substitute some values.
 
-## Write a short comment describing this function
+## makeCacheMatrix: creates a special "matrix", which is really a list containing a function to
+## 1.	set the value of the matrix
+## 2.	get the value of the matrix
+## 3.	set the value of the inverse
+## 4.	get the value of the inverse
+
 
 makeCacheMatrix <- function(x = matrix()) {
         i <- NULL
@@ -16,10 +20,9 @@ makeCacheMatrix <- function(x = matrix()) {
         list(set = set, get = get,
              setinv = setinv,
              getinv = getinv)
-        
 }
 
-## Write a short comment describing this function
+## cacheSolve: Computes the inverse of the special "matrix" and checks if the inverse has already been calculated. 
 
 cacheSolve <- function(x, ...) {
 
